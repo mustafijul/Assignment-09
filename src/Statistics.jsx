@@ -27,7 +27,7 @@ const Statistics = () => {
         <img src="/src/assets/images/bg1.png" alt="" />
       </div>
       {/* job details */}
-      <div className="flex">
+      <div className="lg:flex">
       {/* left side information */}
         <div className="px-4 pt-5 mx-auto lg:w-1/2 md:px-24 lg:px-8">
           {/* job responsibility */}
