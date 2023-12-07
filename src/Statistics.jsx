@@ -28,7 +28,7 @@ const Statistics = () => {
       </div>
       {/* job details */}
       <div className="lg:flex">
-      {/* left side information */}
+        {/* left side information */}
         <div className="px-4 pt-5 mx-auto lg:w-1/2 md:px-24 lg:px-8">
           {/* job responsibility */}
           <div className="mb-4">
@@ -64,15 +64,33 @@ const Statistics = () => {
         </div>
         {/* job details card */}
         <div className="px-4 pt-5 mx-auto lg:w-1/4 md:px-24 lg:px-8 bg-violet-100 mb-5 mt-5 h-150">
-          <p> Job details</p><hr className="border-1 border-black"/> 
-          
-          <p className="mt-3"> <span className="font-bold">Job Title: </span> {jobs.job_title}</p>
-          <p className="mt-3"><span className="font-bold">Salary: </span> {jobs.salary}</p>
+          <p> Job details</p>
+          <hr className="border-1 border-black" />
+
+          <p className="mt-3">
+            {" "}
+            <span className="font-bold">Job Title: </span> {jobs.job_title}
+          </p>
+          <p className="mt-3">
+            <span className="font-bold">Salary: </span> {jobs.salary}
+          </p>
           <p className="mt-4 mb-2">Contact Information </p>
-          <hr className="border-1 border-black"/>
-          <p>Phone: {jobs.contact_information.phone}</p>
-          <p>Email: {jobs.contact_information.email}</p>
-          <p>Address: {jobs.contact_information.address}</p>
+          <hr className="border-1 border-black" />
+          {jobs.contact_information ? (
+            <p>Phone: {jobs.contact_information.phone}</p>
+          ) : (
+            <p>Phone: null</p>
+          )}
+          {jobs.contact_information ? (
+            <p>Email: {jobs.contact_information.email}</p>
+          ) : (
+            <p>Email: null</p>
+          )}
+          {jobs.contact_information ? (
+            <p>Address: {jobs.contact_information.address}</p>
+          ) : (
+            <p>Address: null</p>
+          )}
         </div>
       </div>
     </>
