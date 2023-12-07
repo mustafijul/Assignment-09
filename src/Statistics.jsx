@@ -68,7 +68,11 @@ const Statistics = () => {
           
           <p className="mt-3"> <span className="font-bold">Job Title: </span> {jobs.job_title}</p>
           <p className="mt-3"><span className="font-bold">Salary: </span> {jobs.salary}</p>
+          <p className="mt-4 mb-2">Contact Information </p>
           <hr className="border-1 border-black"/>
+          <p>Phone: {jobs.contact_information.phone}</p>
+          <p>Email: {jobs.contact_information.email}</p>
+          <p>Address: {jobs.contact_information.address}</p>
         </div>
       </div>
     </>
