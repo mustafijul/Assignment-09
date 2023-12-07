@@ -28,15 +28,19 @@ const Statistics = () => {
       </div>
       <div>
       <div  className="px-4 pt-5 mx-auto lg:w-1/2 md:px-24 lg:px-8">
+        {/* job responsibility */}
         <div className="mb-4">
         <h1> <span className="font-bold">Job Responsibility: </span> {jobs.job_responsibility}</h1>
         </div>
-  
-        <p> <span className="font-bold">Job Description: </span>{jobs.job_description}</p>
-        <p><span className="font-bold">Educational Requirements: </span></p>
-        <p>{jobs.educational_requirements}</p>
-        <p><span className="font-bold">Job Experience: </span></p>
-        <p>{jobs.experiences}</p>
+    {/* job description */}
+    <div className="mb-4">  <p> <span className="font-bold">Job Description: </span>{jobs.job_description}</p></div>
+      {/* Educational requirements */}
+      <div className="mb-5"><p><span className="font-bold">Educational Requirements: </span></p>
+        <p>{jobs.educational_requirements}</p></div>
+        {/* job experience */}
+        <div className="mb-5"><p><span className="font-bold">Job Experience: </span></p>
+        <p>{jobs.experiences}</p></div>
+        
       </div>
       <div className="px-4 pt-5 mx-auto lg:w-1/4 md:px-24 lg:px-8">
 
