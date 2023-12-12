@@ -76,11 +76,7 @@ const Statistics = () => {
           </p>
           <p className="mt-4 mb-2">Contact Information </p>
           <hr className="border-1 border-black" />
-          {jobs.contact_information ? (
-            <p>Phone: {jobs.contact_information.phone}</p>
-          ) : (
-            <p>Phone: null</p>
-          )}
+        {/* jons section phone number */}
           {jobs.contact_information ? (
             <p>Email: {jobs.contact_information.email}</p>
           ) : (
