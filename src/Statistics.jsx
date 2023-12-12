@@ -81,12 +81,12 @@ const Statistics = () => {
           ) : (
             <p>Phone: null</p>
           )}
-         {/* job information section done */}
           {jobs.contact_information ? (
-            <p>Address: {jobs.contact_information.address}</p>
+            <p>Email: {jobs.contact_information.email}</p>
           ) : (
-            <p>Address: null</p>
+            <p>Email: null</p>
           )}
+       {/* job email information  */}
         </div>
       </div>
     </>
