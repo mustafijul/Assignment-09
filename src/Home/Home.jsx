@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Link, useLoaderData } from "react-router-dom";
-import Job from "../Job";
-import Statistics from "../Statistics";
+import {  useLoaderData } from "react-router-dom";
+import Job from "../job.jsx";
+
 const Home = () => {
   // Aos effect
   useEffect(() => {
